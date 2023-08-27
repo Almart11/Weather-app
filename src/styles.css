@@ -1,0 +1,50 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+h1 {
+  padding: top=20px;
+  color: #4b99ff;
+  font-size: 45px;
+  font-weight: bolder;
+  font-style: italic;
+}
+h2 {
+  color: #04c3ff;
+  font-weight: bolder;
+  font-style: normal;
+}
+p,
+div {
+  color: #939aa9;
+  font-style: italic;
+}
+.rain-moon-icon {
+  font-size: 50px;
+  margin-left: 25px;
+  color: #096979;
+}
+.search-date {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+.details-weather {
+  padding-top: 20px;
+  font-size: small;
+}
+.row {
+  padding-top: 100px;
+}
+.rain-icon {
+  font-size: 35px;
+  color: #096979;
+}
+.sun-rain-icon {
+  font-size: 35px;
+  color: #ffec6a;
+}
+.cloud-icon {
+  font-size: 35px;
+  color: #8b8a82;
+}

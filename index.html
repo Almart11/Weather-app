@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <script
+      src="https://kit.fontawesome.com/0bd8544fc7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="app"></div>
+      <div class="row">
+        <div class="col-6">
+          <h1>
+            <span id="temperature"> 13</span>
+            <span>ºC</span>
+          </h1>
+          <h2>Bogota</h2>
+          <span id="description">Rain</span>
+          <i class="fa-solid fa-cloud-moon-rain rain-moon-icon"></i>
+        </div>
+        <div class="col-6">
+          <div class="weather">
+            <form id="searching">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="city"
+                  aria-describedby="cityHelp"
+                  placeholder="Search for a different city"
+                  autocomplete="off"
+                />
+                <input type="submit" value="Search" />
+              </div>
+            </form>
+            <div id="date">Sun, Jul 16 19:29</div>
+          </div>
+        </div>
+      </div>
+      <div class="details-weather">
+        <div>Humidity <span id="humidity">80</span>%</div>
+        <div>Pressure <span id="pressure">1018</span>Pa</div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Mon</h5>
+              <i class="fa-solid fa-cloud-showers-heavy rain-icon"></i>
+              <p class="card-text">16º</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Tue</h5>
+              <i class="fa-solid fa-cloud-showers-heavy rain-icon"></i>
+              <p class="card-text">17º</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Wed</h5>
+              <i class="fa-solid fa-cloud-sun-rain sun-rain-icon"></i>
+              <p class="card-text">17º</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Thu</h5>
+              <i class="fa-solid fa-cloud cloud-icon"></i>
+              <p class="card-text">17º</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Fri</h5>
+              <i class="fa-solid fa-cloud cloud-icon"></i>
+              <p class="card-text">17º</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="src/index.js"></script>
+    </div>
+  </body>
+</html>
